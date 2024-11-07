@@ -13,7 +13,7 @@ public class Bill3 {
         double priceForEach;
 		priceForEach = Math.ceil((double)totalPrice/3);
 
-       System.out.println("Dear " +name3+ ", "+name2+ ", and " +name1+ ": please pay "  +priceForEach+ " shekels each");
+       System.out.println("Dear " +name3+ ", "+name2+ ", and " +name1+ ": pay "  +priceForEach+ " shekels each");
 
 	}
 }
