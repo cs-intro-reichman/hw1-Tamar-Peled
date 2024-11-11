@@ -4,15 +4,17 @@ public class FVCalc {
 		// Replace this comment with your code
 
 		int currentValue = Integer.parseInt(args[0]);
-		int n = Integer.parseInt(args[2]);
-		double rate =Double.parseDouble(args[1]);
-		double rate2 = rate/100;
 
+		double interestAsPercentage =Double.parseDouble(args[1]);
+
+		int numberOfYears = Integer.parseInt(args[2]);
 		
+		double interestAsDecimal = (interestAsPercentage/100);
+
 		double futureValue;
 
-		futureValue=currentValue*(Math.pow((1+rate2),n)); 
+		futureValue=currentValue*(Math.pow((1+interestAsDecimal),numberOfYears)); 
 
-		System.out.println("After " +n+ " years, a $" +currentValue+ " saved at "+rate+ "% will yield $" +(int)futureValue);
+		System.out.println("After " +numberOfYears+ " years, a $" +currentValue+ " saved at "+interestAsPercentage+ "% will yield $" +(int)futureValue);
 	}
 }
